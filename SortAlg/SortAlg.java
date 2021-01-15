@@ -66,9 +66,9 @@ public class SortAlg
     
     
     //von OldCurmudgeon https://stackoverflow.com/questions/13766209/effective-swapping-of-elements-of-an-array-in-java
-    private static final <T> void swap (T[] a, int i, int j) {
-        T t = a[i];
-        a[i] = a[j];
-        a[j] = t;
-    }
+    //private static final <T> void swap (T[] a, int i, int j) {
+        //T t = a[i];
+        //a[i] = a[j];
+        //a[j] = t;
+    //}
 }
