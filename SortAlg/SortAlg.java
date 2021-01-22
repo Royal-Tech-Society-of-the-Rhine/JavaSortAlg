@@ -63,6 +63,27 @@ public class SortAlg
         return lListS;
     }
     
+    public List<Integer> insertionsort(List<Integer> pList)
+    {
+        List<Integer> lListU = pList;
+        //List<Integer> lListS = new ArrayList<Integer>();
+        int lP = 0;
+        int lT = 0;
+        for(int n = 1; lListU.size()-1 >= n; n++) 
+        {
+            lP = lListU.get(n);
+            lT = n;
+            while(lT > 0 && lListU.get(lT-1) > lP)
+            {
+                Collections.swap(lListU, lT, lT-1);
+                //lListU.add(lT, lListU.remove(lT-1));  
+                lT = lT - 1;
+            }
+            //lListU.set(lT, lP);
+        }
+        return lListU;
+    }
+    
     
     
     //von OldCurmudgeon https://stackoverflow.com/questions/13766209/effective-swapping-of-elements-of-an-array-in-java

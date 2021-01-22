@@ -87,7 +87,13 @@ public class View extends EBAnwendung
  */
     public void hatKnopfInsertionsortGeklickt()
     {
-        //    Schreiben Sie hier den Text ihres Dienstes
+        zList = hatParser.splitStringInTokens(hatTextfeldInput.inhaltAlsText());        
+        List<Integer> lList = hatSA.insertionsort(zList);        
+        String lString = lList.toString();
+        lString = lString.replaceAll("\\[","");
+        lString = lString.replaceAll("\\]","");
+        lString = lString.replaceAll("\\,","");
+        hatEtikettOutput.setzeInhalt(lString);
     }
 
 }
