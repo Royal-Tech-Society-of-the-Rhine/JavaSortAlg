@@ -46,6 +46,8 @@ public class View extends EBAnwendung
         // Ausrichtung
         hatTextfeldInput.setzeAusrichtung(Ausrichtung.LINKS);
         
+        hatTextfeldInput.setzeHinweis("Es können nur Zahlen eingegeben werden. Einzelne Zahlen müssen mit einem Leerzeichen getrennt werden.");
+        
         hatParser = new Parser();
         hatSA = new SortAlg();
         zList = new ArrayList<Integer>();
