@@ -60,8 +60,8 @@ public class View extends EBAnwendung
     public void hatKnopfBubblesortGeklickt()
     {        
         zList = hatParser.splitStringInTokens(hatTextfeldInput.inhaltAlsText());        
-        List<Integer> lList = hatSA.bubbelsort(zList);        
-        String lString = lList.toString();
+        zList = hatSA.bubbelsort(zList);        
+        String lString = zList.toString();
         lString = lString.replaceAll("\\[","");
         lString = lString.replaceAll("\\]","");
         lString = lString.replaceAll("\\,","");
@@ -75,8 +75,8 @@ public class View extends EBAnwendung
     public void hatKnopfSelectionsortGeklickt()
     {
         zList = hatParser.splitStringInTokens(hatTextfeldInput.inhaltAlsText());        
-        List<Integer> lList = hatSA.selectionsort(zList);        
-        String lString = lList.toString();
+        zList = hatSA.selectionsort(zList);        
+        String lString = zList.toString();
         lString = lString.replaceAll("\\[","");
         lString = lString.replaceAll("\\]","");
         lString = lString.replaceAll("\\,","");
@@ -90,8 +90,8 @@ public class View extends EBAnwendung
     public void hatKnopfInsertionsortGeklickt()
     {
         zList = hatParser.splitStringInTokens(hatTextfeldInput.inhaltAlsText());        
-        List<Integer> lList = hatSA.insertionsort(zList);        
-        String lString = lList.toString();
+        zList = hatSA.insertionsort(zList);        
+        String lString = zList.toString();
         lString = lString.replaceAll("\\[","");
         lString = lString.replaceAll("\\]","");
         lString = lString.replaceAll("\\,","");
